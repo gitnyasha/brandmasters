@@ -120,3 +120,93 @@
 #clients img {
     transition: all 0.4s ease-in-out
 }
+
+
+/*VIDEO PARALLAX SECTION*/
+
+section.video-section.video-parallax.no-transition {
+    background-image: url(../img/bg-callout.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    -webkit-background-size: cover;
+}
+
+p.text-medium.text-dark-gray.margin-20px-bottom {
+    color: #ffffff;
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+h1.text-white.font-weight-500 {
+    font-size: 60px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 65px;
+}
+
+.center-col {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn.btn-extra-large {
+    font-size: 18px;
+    line-height: 2px;
+    color: #FFFFFF;
+}
+
+.btn {
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    width: auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    transition-duration: 0.3s;
+    transition: all 0.3s !important;
+    transition-timing-function: ease-in-out;
+}
+
+i.fa.fa-play-circle {
+    font-size: 55px;
+    margin-right: 10px;
+    display: inline;
+    vertical-align: middle;
+    margin-top: -10px;
+}
+
+.btn.btn-extra-large:hover i.fa.fa-play-circle {
+    display: initial;
+    background: #fe563a !important;
+    background: -moz-linear-gradient(left, #fe563a 0%, #e43a78 100%)!important;
+    background: -webkit-linear-gradient(left, #fe563a 0%, #e43a78 100%) !important;
+    background: -ms-linear-gradient(left, #fe563a 0%, #e43a78 100%) !important;
+    background: linear-gradient(to right, #fe563a 0%, #e43a78 100%) !important;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fe563a', endColorstr='#e43a78', GradientType=1)!important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+i.fa.fa-play-circle:hover {
+    display: initial;
+    background: #fe563a;
+    background: -moz-linear-gradient(left, #fe563a 0%, #e43a78 100%);
+    background: -webkit-linear-gradient(left, #fe563a 0%, #e43a78 100%);
+    background: -ms-linear-gradient(left, #fe563a 0%, #e43a78 100%);
+    background: linear-gradient(to right, #fe563a 0%, #e43a78 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fe563a', endColorstr='#e43a78', GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
