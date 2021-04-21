@@ -339,6 +339,13 @@ h6 {
     border: 0
 }
 
+@media (max-width: 650px) {
+    .portfolio-item img {
+        object-fit: cover!important;
+        object-position: center!important;
+    }
+}
+
 footer.footer {
     padding-top: 5rem;
     padding-bottom: 5rem
