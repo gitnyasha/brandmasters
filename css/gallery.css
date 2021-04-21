@@ -1,0 +1,109 @@
+.gallery-wrapper {
+    width: 100%;
+    height: 400px;
+    display: table-row-container;
+    margin: 10px auto;
+    border-radius: 7px;
+    overflow: hidden;
+    border: solid #fff;
+    border-width: 1px 1px 1px 0px;
+}
+
+.gallery-item {
+    display: table-cell;
+    border: solid #fff;
+    width: 0.5%;
+    height: 400px;
+    border-width: 0px 0px 0px 1px;
+    transition: width 0.15s linear 0s, filter 0.25s linear 0.1s, -webkit-filter 0.25s linear 0.1s, -moz-filter 0.25s linear 0.1s;
+    font-size: 40px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(80%);
+    -moz-filter: grayscale(80%);
+    -webkit-filter: grayscale(80%);
+}
+
+.gallery-item:hover {
+    width: 18%;
+    filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    /* transition: width 0.2s linear 0s; */
+}
+
+.hidden {
+    display: none;
+}
+
+.filter-wrapper {
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+    width: 60%;
+    display: table-row-container;
+    text-align: center;
+}
+
+.filter-item {
+    display: table-cell;
+    width: 1%;
+    float: auto;
+    border: solid grey;
+    background-color: rgb(165, 13, 107);
+    color: #fff;
+    border-width: 1px 1px 1px 0;
+    font-size: 14px;
+    transition: width 0.1s linear 0s;
+}
+
+.filter-item:first-child {
+    border-width: 1px;
+    border-radius: 20px 0 0 20px;
+}
+
+.filter-item:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.filter-item:hover {
+    background: grey;
+    width: 2%;
+}
+
+#all:checked~.filter-wrapper>[for='all'] {
+    width: 2%;
+    background: #fff;
+    color: white;
+}
+
+#advertisements:checked~.filter-wrapper>[for='advertisements'] {
+    width: 2%;
+    background: #fff;
+    color: white;
+}
+
+#brandings:checked~.filter-wrapper>[for='brandings'] {
+    width: 2%;
+    background: #fff;
+    color: white;
+}
+
+#marketings:checked~.filter-wrapper>[for='marketings'] {
+    width: 2%;
+    background: #fff;
+    color: white;
+}
+
+#advertisements:checked~.gallery-wrapper> :not([data-tag='advertisement']) {
+    display: none;
+}
+
+#brandings:checked~.gallery-wrapper> :not([data-tag='branding']) {
+    display: none;
+}
+
+#marketings:checked~.gallery-wrapper> :not([data-tag='marketing']) {
+    display: none;
+}
