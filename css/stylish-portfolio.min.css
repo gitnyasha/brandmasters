@@ -485,6 +485,10 @@ h6 {
     padding-left: 5px;
 }
 
+.custom-color {
+    background-color: #020b29;
+}
+
 .contact-section input[type="email"] {
     background-color: #020b29;
     border-bottom: 1px solid #ccc;
