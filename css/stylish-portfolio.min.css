@@ -454,6 +454,48 @@ h6 {
     transform: translateY(-20px);
 }
 
+.contact-section {
+    background-color: #020b29;
+}
+
+.contact-section ::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.contact-section ::-webkit-input-placeholder {
+    /* Edge */
+    color: #fff;
+}
+
+.contact-section :-ms-input-placeholder {
+    /* Internet Explorer */
+    color: #fff;
+}
+
+.contact-section input[type=text] {
+    background-color: #020b29;
+    border-bottom: 1px solid #ccc;
+    padding-left: 5px;
+}
+
+.contact-section input[type="tel"] {
+    background-color: #020b29;
+    border-bottom: 1px solid #ccc;
+    padding-left: 5px;
+}
+
+.contact-section input[type="email"] {
+    background-color: #020b29;
+    border-bottom: 1px solid #ccc;
+    padding-left: 5px;
+}
+
+.contact-section textarea {
+    background-color: #020b29!important;
+    padding-left: 5px;
+}
+
 @media (max-width: 650px) {
     .portfolio-item img {
         object-fit: cover!important;

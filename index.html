@@ -89,34 +89,21 @@
         </ul>
     </nav>
 
-    <section id="home" class="home-banner-01 mb-5" style="background-image: url(img/banner.jpeg);">
-        <div class="container-fluid">
-            <div class="row min-vh-100 align-items-center">
-                <div class="col-md-9 col-lg-7">
-                    <div class="ht-text">
-                        <h6>Hello,</h6>
-                        <h1>I'm Mrikon Roth</h1>
-                        <h2>I Am Passionate <span id="type-it"></span></h2>
-                        <div class="btn-bar go-to">
-                            <a href="#contactus" class="px-btn white">
-                                <span>Contact Us</span>
-                                <i class="arrow"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">You are in good hands</h1>
+            <p>We are the Brandmasters</p>
+            <a href="#contact" class="button">Contact Us</a>
         </div>
-        <div class="go-to go-to-next">
-            <a href="#about">
-                <span></span>
-            </a>
-        </div>
-    </section>
+    </div>
 
     <!-- Portfolio -->
     <section class="content-section pt-5" id="portfolio">
         <div class="container-fluid p-0">
+            <div class="content-section-heading text-center">
+                <h3 class="text-secondary mb-0">Portfolio</h3>
+                <h2 class="mb-5">Our work</h2>
+            </div>
             <div class="py-0">
                 <div class="row no-gutters">
                     <div class="col-lg-6 mb-3 mb-lg-0">
@@ -268,7 +255,7 @@
     </section>
 
     <!--Address Start-->
-    <section id="contact" class="p-0">
+    <section id="contact" class="p-0 contact-section">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-6 p-5">
@@ -277,7 +264,7 @@
                         <div class="row">
                             <div class="col-md-12 text-center">
                                 <div class="title d-inline-block">
-                                    <h2>Let's Get In Touch</h2>
+                                    <h2 class="text-light">Let's Get In Touch</h2>
                                 </div>
                             </div>
                         </div>
@@ -314,7 +301,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
-                                    <button type="submit" class="btn btn-large btn-primary btn-rounded mt-4" id="submit_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i> <span>Contact Now</span></button>
+                                    <button type="submit" class="btn btn-large btn-outline-light mt-4" id="submit_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i> <span>Contact Now</span></button>
                                 </div>
                             </div>
                         </form>
@@ -334,27 +321,44 @@
     </section>
     <!--Address End-->
 
-    <!-- Footer -->
-    <footer class="footer text-center">
-        <div class="container">
-            <ul class="list-inline mb-5">
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#!">
-                        <i class="icon-social-facebook"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white mr-3" href="#!">
-                        <i class="icon-social-twitter"></i>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a class="social-link rounded-circle text-white" href="#!">
-                        <i class="icon-social-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-            <p class="text-muted small mb-0">Copyright &copy; Brandmasters 2021</p>
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/logo.png" class="img-fluid" width="130" height="60" alt="">
+                    <p class="small pt-3 text-muted">Prefered creative, advertising, sales and marketing consultancy</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights 2021 All rights reserved.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </footer>
 
