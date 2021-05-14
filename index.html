@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link href="css/gallery.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -52,14 +53,16 @@
 </head>
 
 <body id="page-top">
-    <!-- <div class="row mt-0 bg-light">
-        <div class="col d-flex justify-content-center">
-            <a href="index.html" class="top-left">
-                <img src="img/logo.png" class="img-fluid" width="170" height="100" alt="">
-            </a>
-        </div>
-    </div> -->
     <!-- Navigation -->
+    <div class="mob-header dark">
+        <div class="d-flex align-items-center">
+            <div class="navbar-brand">
+                <a class="logo-text" href="index.html">
+                    <img src="img/logo.png" class="img-fluid" width="130" height="60" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
     <a class="menu-toggle rounded" href="#">
         <i class="fas fa-bars"></i>
     </a>
@@ -85,143 +88,125 @@
             </li>
         </ul>
     </nav>
-    <div class="container-fluid">
-        <div class="slide-section">
-            <div class="swiper-container slideshow">
 
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide slide">
-                        <div class="slide-image" style="background-image: url(https://user-images.githubusercontent.com/45620987/115624463-f6bc6e80-a2fa-11eb-9ad8-2efb6c69a624.jpg)"></div>
-                        <span class="slide-title">Branding</span>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <div class="slide-image" style="background-image: url(https://user-images.githubusercontent.com/45620987/115624522-105db600-a2fb-11eb-80c6-c5417b0f2278.jpg)"></div>
-                        <span class="slide-title">Advertising</span>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <div class="slide-image" style="background-image: url(https://user-images.githubusercontent.com/45620987/115624527-12c01000-a2fb-11eb-9121-b0dae30c0905.jpg)"></div>
-                        <span class="slide-title">Marketing</span>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <div class="slide-image swiper-lazy" style="background-image: url(https://user-images.githubusercontent.com/45620987/115624537-15bb0080-a2fb-11eb-9edd-709cfe1b20a7.jpg)">
+    <section id="home" class="home-banner-01 mb-5" style="background-image: url(img/banner.jpeg);">
+        <div class="container-fluid">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-md-9 col-lg-7">
+                    <div class="ht-text">
+                        <h6>Hello,</h6>
+                        <h1>I'm Mrikon Roth</h1>
+                        <h2>I Am Passionate <span id="type-it"></span></h2>
+                        <div class="btn-bar go-to">
+                            <a href="#contactus" class="px-btn white">
+                                <span>Contact Us</span>
+                                <i class="arrow"></i>
+                            </a>
                         </div>
-                        <span class="slide-title">Packaging</span>
                     </div>
-
-                    <div class="swiper-slide slide">
-                        <div class="slide-image swiper-lazy" style="background-image: url(https://user-images.githubusercontent.com/45620987/115624549-18b5f100-a2fb-11eb-8b75-fde02e86131e.jpg)">
-                        </div>
-                        <span class="slide-title">Information</span>
-                    </div>
-
-                    <div class="swiper-slide slide">
-                        <div class="slide-image swiper-lazy" style="background-image: url(https://user-images.githubusercontent.com/45620987/115624552-1b184b00-a2fb-11eb-94a1-661f1433a2cd.jpg)">
-                        </div>
-                        <span class="slide-title">Packaging design</span>
-                    </div>
-
-                </div>
-
-                <div class="slideshow-pagination"></div>
-
-                <div class="slideshow-navigation">
-                    <div class="slideshow-navigation-button prev"><span class="fas fa-chevron-left"></span></div>
-                    <div class="slideshow-navigation-button next"><span class="fas fa-chevron-right"></span></div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <!-- <section class="content-section bg-light" id="about">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <h2>YOU ARE IN GOOD HANDS</h2>
-                    <p class="lead">
-                        Prefered creative, advertising, sales and marketing consultancy
-                    </p>
                 </div>
             </div>
         </div>
-    </section> -->
+        <div class="go-to go-to-next">
+            <a href="#about">
+                <span></span>
+            </a>
+        </div>
+    </section>
 
     <!-- Portfolio -->
-    <section class="content-section" id="portfolio">
-        <div class="container-fluid">
-            <div class="content-section-heading text-center">
-                <h3 class="text-secondary mb-0">Portfolio</h3>
-                <h2 class="mb-5">Our work</h2>
-            </div>
-            <div class="row no-gutters">
-                <div class="col-lg">
-                    <a class="portfolio-item" href="#!">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">ADVERTISEMENT</div>
+    <section class="content-section pt-5" id="portfolio">
+        <div class="container-fluid p-0">
+            <div class="py-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="hover hover-5 text-white">
+                            <div class="hover-text text-center p-5">
+                                <h3 class="display-5 text-muted font-weight-bold">Advertisement</h3>
+                                <p class="font-italic text-muted mb-0">Print advertisement for newspaper, Billboards and other print media. Web advertisement to be placed on website</p>
+                            </div>
+                            <img class="img-fluid" src="img/gazebo.jpg" alt="">
+                            <div class="hover-overlay hover-overlay-separate"></div>
+                            <div class="hover-5-content">
+                                <h3 class="hover-5-title text-uppercase font-weight-light mb-0"></h3>
                             </div>
                         </div>
-                        <img class="img-responsive" src="img/gazebo.jpg" height="400" alt="">
-                    </a>
-                </div>
-                <div class="col-lg">
-                    <a class="portfolio-item" href="#!">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">MARKETING</div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hover hover-5 text-white">
+                            <div class="hover-text text-center p-5">
+                                <h3 class="display-5 text-muted font-weight-bold">Marketing</h3>
+                                <p class="font-italic text-muted mb-0">Bronchures and direct mail, Newsletters, Mailers and leaflets. Exhibition concepts and stand design. Promotional gifts and branded clothing. Billboard</p>
+                            </div>
+                            <img class="img-fluid" src="img/coolers.jpg" alt="">
+                            <div class="hover-overlay"></div>
+                            <div class="hover-5-content">
+                                <h3 class="hover-5-title text-uppercase font-weight-light mb-0"></h3>
                             </div>
                         </div>
-                        <img class="img-responsive" src="img/coolers.jpg" height="400" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="row no-gutters">
-                <div class="col-lg">
-                    <a class="portfolio-item" href="#!">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">INFORMATION</div>
-                            </div>
-                        </div>
-                        <img class="img-responsive" src="img/nbsz.jpg" height="400" alt="">
-                    </a>
-                </div>
-                <div class="col-lg">
-                    <a class="portfolio-item" href="#!">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">BRANDING</div>
-                            </div>
-                        </div>
-                        <img class="img-responsive" src="img/gzu.jpg" height="400" alt="">
-                    </a>
+                    </div>
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="col-lg">
-                    <a class="portfolio-item" href="#!">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">PACKAGING DESIGN</div>
+
+            <div class="py-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="hover hover-5 text-white">
+                            <div class="hover-text text-center p-5">
+                                <h3 class="display-5 text-muted font-weight-bold">Information</h3>
+                                <p class="font-italic text-muted mb-0">Signage, Front Office design </p>
+                            </div>
+                            <img class="img-fluid" src="img/nbsz.jpg" height="400" alt="">
+                            <div class="hover-overlay"></div>
+                            <div class="hover-5-content">
+                                <h3 class="hover-5-title text-uppercase font-weight-light mb-0"></h3>
                             </div>
                         </div>
-                        <img class="img-responsive" src="img/coolers2.jpg" height="400" alt="">
-                    </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hover hover-5 text-white">
+                            <div class="hover-text text-center p-5">
+                                <h3 class="display-5 text-muted font-weight-bold">Branding</h3>
+                                <p class="font-italic text-muted mb-0">An inspirational collection of subtle hover effects</p>
+                            </div>
+                            <img class="img-fluid" src="img/gzu.jpg" height="400" alt="">
+                            <div class="hover-overlay hover-overlay-separate"></div>
+                            <div class="hover-5-content">
+                                <h3 class="hover-5-title text-uppercase font-weight-light mb-0"></h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg">
-                    <a class="portfolio-item" href="#!">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <div class="h2">PACKAGING</div>
+            </div>
+
+            <div class="py-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-6 mb-3 mb-lg-0">
+                        <div class="hover hover-5 text-white">
+                            <div class="hover-text text-center p-5">
+                                <h3 class="display-5 text-muted font-weight-bold">Packaging Design</h3>
+                                <p class="font-italic text-muted mb-0">Products packaging</p>
+                            </div>
+                            <img class="img-fluid" src="img/coolers2.jpg" height="400" alt="">
+                            <div class="hover-overlay hover-overlay-separate"></div>
+                            <div class="hover-5-content">
+                                <h3 class="hover-5-title text-uppercase font-weight-light mb-0"></h3>
                             </div>
                         </div>
-                        <img class="img-responsive" src="img/gazebo.jpg" height="400" alt="">
-                    </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hover hover-5 text-white">
+                            <div class="hover-text text-center p-5">
+                                <h3 class="display-5 text-muted font-weight-bold">Sales Colateral</h3>
+                                <p class="font-italic text-muted mb-0">Sales document design and layout. Internal document design and layout & other electronic media</p>
+                            </div>
+                            <img class="img-fluid" src="img/gazebo.jpg" height="400" alt="">
+                            <div class="hover-overlay"></div>
+                            <div class="hover-5-content">
+                                <h3 class="hover-5-title text-uppercase font-weight-light mb-0"></h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -387,192 +372,10 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
+    <script src="js/stylish-portfolio.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.fancybox.js"></script>
-    <script>
-        // The Slideshow class.
-        class Slideshow {
-            constructor(el) {
-
-                this.DOM = {
-                    el: el
-                };
-
-                this.config = {
-                    slideshow: {
-                        delay: 3000,
-                        pagination: {
-                            duration: 3,
-                        }
-                    }
-                };
-
-                // Set the slideshow
-                this.init();
-
-            }
-            init() {
-
-                var self = this;
-
-                // Charmed title
-                this.DOM.slideTitle = this.DOM.el.querySelectorAll('.slide-title');
-                this.DOM.slideTitle.forEach((slideTitle) => {
-                    charming(slideTitle);
-                });
-
-                // Set the slider
-                this.slideshow = new Swiper(this.DOM.el, {
-
-                    loop: true,
-                    autoplay: {
-                        delay: this.config.slideshow.delay,
-                        disableOnInteraction: false,
-                    },
-                    speed: 500,
-                    preloadImages: true,
-                    updateOnImagesReady: true,
-
-                    // lazy: true,
-                    // preloadImages: false,
-
-                    pagination: {
-                        el: '.slideshow-pagination',
-                        clickable: true,
-                        bulletClass: 'slideshow-pagination-item',
-                        bulletActiveClass: 'active',
-                        clickableClass: 'slideshow-pagination-clickable',
-                        modifierClass: 'slideshow-pagination-',
-                        renderBullet: function(index, className) {
-
-                            var slideIndex = index,
-                                number = (index <= 8) ? '0' + (slideIndex + 1) : (slideIndex + 1);
-
-                            var paginationItem = '<span class="slideshow-pagination-item">';
-                            paginationItem += '<span class="pagination-number">' + number + '</span>';
-                            paginationItem = (index <= 8) ? paginationItem + '<span class="pagination-separator"><span class="pagination-separator-loader"></span></span>' : paginationItem;
-                            paginationItem += '</span>';
-
-                            return paginationItem;
-
-                        },
-                    },
-
-                    // Navigation arrows
-                    navigation: {
-                        nextEl: '.slideshow-navigation-button.next',
-                        prevEl: '.slideshow-navigation-button.prev',
-                    },
-
-                    // And if we need scrollbar
-                    scrollbar: {
-                        el: '.swiper-scrollbar',
-                    },
-
-                    on: {
-                        init: function() {
-                            self.animate('next');
-                        },
-                    }
-
-                });
-
-                // Init/Bind events.
-                this.initEvents();
-
-            }
-            initEvents() {
-
-                this.slideshow.on('paginationUpdate', (swiper, paginationEl) => this.animatePagination(swiper, paginationEl));
-                //this.slideshow.on('paginationRender', (swiper, paginationEl) => this.animatePagination());
-
-                this.slideshow.on('slideNextTransitionStart', () => this.animate('next'));
-
-                this.slideshow.on('slidePrevTransitionStart', () => this.animate('prev'));
-
-            }
-            animate(direction = 'next') {
-
-                // Get the active slide
-                this.DOM.activeSlide = this.DOM.el.querySelector('.swiper-slide-active'),
-                    this.DOM.activeSlideImg = this.DOM.activeSlide.querySelector('.slide-image'),
-                    this.DOM.activeSlideTitle = this.DOM.activeSlide.querySelector('.slide-title'),
-                    this.DOM.activeSlideTitleLetters = this.DOM.activeSlideTitle.querySelectorAll('span');
-
-                // Reverse if prev  
-                this.DOM.activeSlideTitleLetters = direction === "next" ? this.DOM.activeSlideTitleLetters : [].slice.call(this.DOM.activeSlideTitleLetters).reverse();
-
-                // Get old slide
-                this.DOM.oldSlide = direction === "next" ? this.DOM.el.querySelector('.swiper-slide-prev') : this.DOM.el.querySelector('.swiper-slide-next');
-                if (this.DOM.oldSlide) {
-                    // Get parts
-                    this.DOM.oldSlideTitle = this.DOM.oldSlide.querySelector('.slide-title'),
-                        this.DOM.oldSlideTitleLetters = this.DOM.oldSlideTitle.querySelectorAll('span');
-                    // Animate
-                    this.DOM.oldSlideTitleLetters.forEach((letter, pos) => {
-                        TweenMax.to(letter, .3, {
-                            ease: Quart.easeIn,
-                            delay: (this.DOM.oldSlideTitleLetters.length - pos - 1) * .04,
-                            y: '50%',
-                            opacity: 0
-                        });
-                    });
-                }
-
-                // Animate title
-                this.DOM.activeSlideTitleLetters.forEach((letter, pos) => {
-                    TweenMax.to(letter, .6, {
-                        ease: Back.easeOut,
-                        delay: pos * .05,
-                        startAt: {
-                            y: '50%',
-                            opacity: 0
-                        },
-                        y: '0%',
-                        opacity: 1
-                    });
-                });
-
-                // Animate background
-                TweenMax.to(this.DOM.activeSlideImg, 1.5, {
-                    ease: Expo.easeOut,
-                    startAt: {
-                        x: direction === 'next' ? 200 : -200
-                    },
-                    x: 0,
-                });
-
-                //this.animatePagination()
-
-            }
-            animatePagination(swiper, paginationEl) {
-
-                // Animate pagination
-                this.DOM.paginationItemsLoader = paginationEl.querySelectorAll('.pagination-separator-loader');
-                this.DOM.activePaginationItem = paginationEl.querySelector('.slideshow-pagination-item.active');
-                this.DOM.activePaginationItemLoader = this.DOM.activePaginationItem.querySelector('.pagination-separator-loader');
-
-                console.log(swiper.pagination);
-                // console.log(swiper.activeIndex);
-
-                // Reset and animate
-                TweenMax.set(this.DOM.paginationItemsLoader, {
-                    scaleX: 0
-                });
-                TweenMax.to(this.DOM.activePaginationItemLoader, this.config.slideshow.pagination.duration, {
-                    startAt: {
-                        scaleX: 0
-                    },
-                    scaleX: 1,
-                });
-
-
-            }
-
-        }
-
-        const slideshow = new Slideshow(document.querySelector('.slideshow'));
-    </script>
+    <script src="js/slide.js"></script>
 </body>
 
 </html>
