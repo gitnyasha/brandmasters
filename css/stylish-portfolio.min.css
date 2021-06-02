@@ -64,7 +64,8 @@ h6 {
     text-align: center;
     color: #fff;
     background: rgba(52, 58, 64, .5);
-    line-height: 45px
+    line-height: 45px;
+    z-index: 999;
 }
 
 .scroll-to-top:focus,
