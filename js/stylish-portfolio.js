@@ -365,7 +365,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     $(window).on("scroll", function() {
       console.log($(this).scrollTop())
-      if($(this).scrollTop() >= 30){
+      if($(this).scrollTop() >= 100){
         // set to new image
         $(".brand-logo img").attr("src","https://user-images.githubusercontent.com/45620987/120456524-fdc4ab00-c395-11eb-87d9-486b0b1a5222.png");
       } else {
